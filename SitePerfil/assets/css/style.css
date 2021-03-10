@@ -1,0 +1,112 @@
+/* paleta de cores */
+:root{
+    --cor-bg-principal: #cd853f;
+    --cor-bg-secundaria: #faebd7;
+    --cor-bg-linho: #faf0e6; 
+    --cor-texto-destacado: white;
+}
+
+/* geral */
+body{
+    background-color: #cd853f;
+
+}
+
+h1, h2, h3{
+    text-align: center;
+    color: var(--cor-texto-destacado);
+}
+
+p{
+    text-align: justify;
+    padding: 15px;
+}
+
+
+/* menu */
+#menu li{
+    display: inline;
+    padding: 10px 15px;
+    background-color: var(--cor-bg-secundaria);
+}
+
+#menu li a{
+    color: blue;
+    font-size: 24px;;
+}
+#menu li:hover{
+    background-color: var(--cor-bg-linho);
+    cursor: pointer;
+}
+
+#menu li:hover > a{
+   color: black;
+}
+#menu li a:visited{
+    text-decoration: none;
+}
+
+/*container geral */
+.container{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* container de perfil */
+.perfil{
+    background-color: var(--cor-bg-secundaria);
+    margin-bottom: 15px;
+}
+.perfil .imagem img{
+    max-width: 313px;
+    max-height: 313px;
+    border-radius: 50%;
+}
+
+/* video favorito */
+.video-favorito{
+    margin-bottom: 15px;
+    justify-content: center;
+} 
+
+/* contato e endereço */
+.contato-endereco{
+    padding: 0 10%;
+    margin-bottom: 15px;
+   align-items: flex-start;
+}
+
+.contato-endereco .localizacao  #endereco{
+    margin-bottom: 0;
+}
+
+.contato-endereco .localizacao p{
+    margin-top: 0;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+     font-weight: bold;
+     background-color: var(--cor-bg-secundaria);
+}
+
+
+footer svg{
+   height: 30px;
+   width: 30px;
+   padding: 10px;
+}
+footer svg:hover{
+    cursor: pointer;
+}

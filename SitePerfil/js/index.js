@@ -1,10 +1,10 @@
+var nomeIsOk= false;
+var emailIsOk= false;
+var assuntoIsOk= false;
+
 function validaForms(){
-    let nome= document.querySelector("input#nome").value;
-    let email = document.querySelector("input#email").value;
-    let assunto= document.querySelector('textarea#assunto').value;
-    console.log("nome: "+nome);
-    console.log("email: "+email);
-    console.log("assunto: "+assunto);
+    if(nomeIsOk && emailIsOk && assuntoIsOk) alert("Formulário enviado com sucesso");
+    else alert("Formulãrio não enviado, por favor verifique os campos!");
 
 }
 
@@ -19,6 +19,7 @@ function validaNome(){
         nome.style.backgroundColor= '#F0FFF0';
         verificaNome.style.backgroundColor= '#F0FFF0';
         verificaNome.innerHTML = "Nome Válido"
+        nomeIsOk= true;
     }
 }
 
@@ -31,6 +32,7 @@ function validaEmail(){
     }else{
         email.style.backgroundColor= '#F0FFF0';
         verificaEmail.innerHTML = "Email Válido"
+        emailIsOk= true;
     }   
 }
 
@@ -44,5 +46,6 @@ function validaAssunto(){
     }else{
         assunto.style.backgroundColor= '#F0FFF0';
         verificaAssunto.innerHTML = "Assunto de tamanho adequado";
+        assuntoIsOk= true;
     }   
 }

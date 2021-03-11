@@ -49,3 +49,15 @@ function validaAssunto(){
         assuntoIsOk= true;
     }   
 }
+
+function mapaZoom(){
+    let mapa= document.querySelector("#mapaGoogle");
+    mapa.style.width= '900px';
+    mapa.style.height= '450px';
+}
+
+function mapaNormal(){
+    let mapa= document.querySelector("#mapaGoogle");
+    mapa.style.width= '600px';
+    mapa.style.height= '300px';
+}

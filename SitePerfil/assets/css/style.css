@@ -97,6 +97,11 @@ p{
     font-weight: bold;
 
 }
+
+.contato-endereco .msgErro{
+    padding: 0px;
+    margin: 0px;
+}
 /* footer */
 footer{
     display: flex;

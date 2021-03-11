@@ -21,3 +21,15 @@ function validaNome(){
         verificaNome.innerHTML = "Nome Válido"
     }
 }
+
+function validaEmail(){
+    let email= document.querySelector("input#email");
+    let verificaEmail= document.querySelector("#verificaEmail");
+    if(email.value.indexOf('@') === -1 || email.value.indexOf('.') === -1){
+        email.style.backgroundColor= '#ffbfaa';
+        verificaEmail.innerHTML = "Email Inválido"
+    }else{
+        email.style.backgroundColor= '#F0FFF0';
+        verificaEmail.innerHTML = "Email Válido"
+    }   
+}

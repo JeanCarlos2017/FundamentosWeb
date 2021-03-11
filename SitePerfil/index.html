@@ -45,14 +45,14 @@
             <h2 id="contato">Entre em contato comigo</h2>
             <form>
                 <label for="nome">Nome: </label></br>
-                <input type="text" id="nome">
+                <input type="text" id="nome" onkeyup="validaNome()">
                 </br></br>
                 <label for="email">E-mail: </label></br>
                 <input type="email" id="email">
                 </br></br>
                 <label for="assunto">Assunto</label></br>
                 <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea></br></br>
-                <button> Enviar </button>
+                <button onClick="validaForms()"> Enviar </button>
             </form>
         </div>
         <div class="localizacao">
@@ -86,3 +86,4 @@
     </footer>
 </body>
 </html>
+<script src="js/index.js"></script>

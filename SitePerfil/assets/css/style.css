@@ -78,6 +78,13 @@ p{
    align-items: flex-start;
 }
 
+.contato-endereco input{
+    width: 100%;
+}
+
+.contato-endereco textarea{
+    width: 100%;    
+}
 .contato-endereco .localizacao  #endereco{
     margin-bottom: 0;
 }

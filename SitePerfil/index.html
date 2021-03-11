@@ -53,7 +53,8 @@
                 <p id="verificaEmail" class="msgErro"></p>
                 </br></br>
                 <label for="assunto">Assunto</label></br>
-                <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea></br></br>
+                <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup="validaAssunto()"></textarea></br></br>
+                <p id="verificaAssunto" class="msgErro"></p>
                 <button onClick="validaForms()"> Enviar </button>
             </form>
         </div>

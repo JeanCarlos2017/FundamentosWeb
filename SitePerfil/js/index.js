@@ -33,3 +33,16 @@ function validaEmail(){
         verificaEmail.innerHTML = "Email Válido"
     }   
 }
+
+
+function validaAssunto(){
+    let assunto= document.querySelector("textarea#assunto");
+    let verificaAssunto= document.querySelector("#verificaAssunto");
+    if(assunto.value.length > 100){
+        assunto.style.backgroundColor= '#ffbfaa';
+        verificaAssunto.innerHTML = "Assunto muito grande";
+    }else{
+        assunto.style.backgroundColor= '#F0FFF0';
+        verificaAssunto.innerHTML = "Assunto de tamanho adequado";
+    }   
+}
